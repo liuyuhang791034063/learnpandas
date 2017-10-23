@@ -9,3 +9,5 @@ data =  {'state':['ohio','Ohio','Ohio','Nevada','Nevada'],
 frame = DataFrame(data , columns=['state','year','pop','debt'])
 frame['debt'] = np.arange(5.)
 print frame
+del frame['debt']
+print frame
