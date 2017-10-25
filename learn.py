@@ -13,5 +13,4 @@ abc = DataFrame(np.arange(12).reshape(4,3), columns=list('bfe'),index=['One','Tw
 de = abc.ix[2]
 series = Series([5,32,23,56], index=['b','a','e','f'])
 
-print frame
-print frame.describe()ttt
+print frame.describe()
