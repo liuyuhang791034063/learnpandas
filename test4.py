@@ -19,4 +19,14 @@ s2 = Series([2,3,4], index=['c','d','e'])
 s3 = Series([5,6], index=['f','g'])
 
 s4 = pd.concat([s1 * 5, s3])
-print s4
+
+ages = [20, 22, 25, 27, 21, 23, 37, 31, 61, 45, 41, 32]
+bins = [18,25,35,60,100]
+group_name = ['Youth','YoungAdult','MiddleAged','Senior']
+cats = pd.cut(ages, bins, labels=group_name)
+
+np.random.seed(12345)
+data = DataFrame(np.random.randn(1000,4))
+print data[(np.abs(data) > 3).any(1)]
+
+
